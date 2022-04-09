@@ -7,7 +7,7 @@ I will be working too refractor code, provide better accessibility, and create a
 
 The update was intended to reduce time to navigate the page(s). 
 
-further implementation will purely be visual rather than function... implemented as functions, funtionally. 
+Further implementation will purely be visual rather than funtional... implemented as functions, funtionally. 
 
 ## Installation
 Simply initialize a directory and pull from github. 
