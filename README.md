@@ -5,6 +5,10 @@
 This website is designed as an online portfolio to showcase my skill as a web developer and to serve as a digital resume for employers or those willing to work alongside me. Continuous changes will be made and content added as time progresses and my portfolio builds. 
 I will be working too refractor code, provide better accessibility, and create a more dynamic and engaging website with additional and/or new technologies.
 
+The update was intended to reduce time to navigate the page(s). 
+
+further implementation will purely be visual rather than function... implemented as functions, funtionally. 
+
 ## Installation
 Simply initialize a directory and pull from github. 
 ```
