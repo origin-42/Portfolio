@@ -22,7 +22,9 @@ Dave Plummer
 
 ## Extras
 
-![snippet](./assets/images/portfolio_screenshot.jpg) - Dave Plummer Portfolio Website
 
-[Introduction](https://origin-42.github.io/Portfolio-Page---Dave-Plummer/)
+
+[Introduction](https://origin-42.github.io/Portfolio-Page---Dave-Plummer/) - Dave Plummer Portfolio Website
+
+![snippet](./assets/images/portfolio_screenshot.jpg)
 
