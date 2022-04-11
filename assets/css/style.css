@@ -17,6 +17,10 @@
 
 }
 
+body {
+    position: relative;
+}
+
 /* Image Backdrop */
 main::before {
     position: absolute;
@@ -26,17 +30,6 @@ main::before {
     background-position: center;
     background-size: cover;
     opacity: 0.5;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-main::after {
-    position: absolute;
-    content: "";
-    background: linear-gradient(rgba(52, 64, 26, 1), rgba(202, 217, 89, 0.5));
     width: 100%;
     height: 100%;
     top: 0;
@@ -60,8 +53,10 @@ main::after {
     font-size: 4rem;
 }
 .hero-container li a {
-    color: var(--fleuroGreen);
+    color: var(--darkGreen);
     font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 0 3px var(--fleuroGreen);
 }
 .hero-container #socials {
     display: flex;
@@ -70,7 +65,7 @@ main::after {
     margin-right: 5px;
 }
 .hero-container #socials li a i:hover {
-    text-shadow: 2px 2px 2px var(--darkGreen);
+    text-shadow: 2px 2px 2px var(--fleuroGreen);
 }
 .hero-container #socials li a i:active {
     text-shadow: none;
@@ -203,6 +198,9 @@ img.card-img-top {
     list-style: circle;
     margin-left: 20px;
 }
+#portfolio-selection .modal-body-left ul li {
+    margin-bottom: 10px;
+}
 #portfolio-selection .modal-body-right {
     display: flex;
     flex-direction: column;
@@ -306,5 +304,37 @@ img.card-img-top {
     }
     .hero-container {
         text-align: center;
+    }
+    .hero-container #socials {
+        justify-content: center;
+    }
+}
+@media (max-width: 540px) {
+    #portfolio-selection .modal-header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #portfolio-selection .modal-header .modal-title {
+        text-align: center;
+    }
+    #portfolio-selection .modal-header .modal-title span {
+        font-size: 1.5rem;
+    }
+    #portfolio-selection .modal-body-right .tech ul * {
+        font-size: 0.6rem;
+    }
+    .modal-footer button {
+        font-size: 0.8rem;
+    }
+    
+}
+
+/* Horizontal view */
+@media (max-height: 400px) {
+    .section {
+        height: 100%;
+    }
+    .title {
+        height: 100%;
     }
 }
