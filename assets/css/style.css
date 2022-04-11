@@ -63,6 +63,18 @@ main::after {
     color: var(--fleuroGreen);
     font-size: 1.2rem;
 }
+.hero-container #socials {
+    display: flex;
+}
+.hero-container #socials li a {
+    margin-right: 5px;
+}
+.hero-container #socials li a i:hover {
+    text-shadow: 2px 2px 2px var(--darkGreen);
+}
+.hero-container #socials li a i:active {
+    text-shadow: none;
+}
 
 /* Portfolio Section */
 .portfolio {
@@ -108,6 +120,9 @@ main::after {
     text-shadow: 2px 2px 2px var(--darkGreen);
     box-shadow: 0 0 3px 3px var(--darkGreen);
     opacity: 1;
+}
+.card:active {
+    box-shadow: none;
 }
 .card .card-img-top, .card .card-body {
     height: 50%;
