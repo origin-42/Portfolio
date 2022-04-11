@@ -291,9 +291,6 @@ img.card-img-top {
     #portfolio-selection .modal-body {
         justify-content: center;
     }
-    .modal {
-        top: 0;
-    }
 }
 @media (max-width: 960px) {
     .section {
@@ -324,6 +321,9 @@ img.card-img-top {
     }
     .modal-footer button {
         font-size: 0.8rem;
+    }
+    .modal {
+        top: 0;
     }
     
 }
