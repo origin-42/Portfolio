@@ -75,6 +75,10 @@ main::before {
 .portfolio {
     display: flex;
     flex-direction: column;
+    padding: 1.5rem;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .portfolio h2 {
     color: var(--fleuroGreen);
@@ -83,13 +87,7 @@ main::before {
     font-style: italic;
     opacity: .8;
     text-shadow: 3px 4px 4px var(--darkGreen);
-}
-.portfolio {
-    display: flex;
-    padding: 1.5rem;
-    max-height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    margin-bottom: 40px;
 }
 .portfolio-container {
     display: flex;
@@ -330,7 +328,7 @@ img.card-img-top {
 }
 
 /* Horizontal view */
-@media (max-height: 400px) {
+@media (max-height: 450px) {
     .section {
         height: 100%;
     }
