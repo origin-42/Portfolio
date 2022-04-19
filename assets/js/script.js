@@ -46,11 +46,11 @@ let projects = [
         technologies: ["HTML", "CSS", "JavaScript", "APIs", "Boostrap", "JQuery", "JQueryUI", "Github"],
         projectType: "Group Project",
         image: "./assets/images/portfolio-images/where-to-watch.jpg",
-        longDescription: "Here is a game designed to test your knowledge. there's always a way to around doing your chores. Try NOT to find Chorebot.",
-        pointOne: "Calculate where Chorebot might be",
-        pointTwo: "Receive feedback on wins and losses",
-        pointThree: "Gain advantage and defeat, not defeating your chores",
-        purpose: "I created a game from scratch as a requirement of work from Codecademy where the goal was to use Javascript to alter the page and results based on user input and outcome."
+        longDescription: "Here is an application designed to help movie enthusiasts decide which movie to watch and navigate where, and how to watch it, weather it be bought, rented, or streamed.",
+        pointOne: "Consider a movie title and get matching titles from criteria",
+        pointTwo: "Click to view movie more in depth, including reviews, actors, actors latest movies and more",
+        pointThree: "View available streaming websites and how to watch",
+        purpose: "We wanted to be able to link end-points for streaming a movie whilst checking reviews all in one place."
     },
     {
         name: "Your Weather Host",
