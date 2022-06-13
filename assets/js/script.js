@@ -1,40 +1,117 @@
-// Call Github API and render pages
-const choreDoorImg = "./assets/images/portfolio-images/choredoor.jpg";
-const doneDailyImg = "./assets/images/portfolio-images/DoneDaily.jpg";
-const passwordGenImg = "./assets/images/portfolio-images/password-generator.jpg";
-const quizTimeoutImg = "./assets/images/portfolio-images/quiztimeout.jpg";
-const weatherHostImg = "./assets/images/portfolio-images/weather_host.jpg";
-const whereToWatchImg = "./assets/images/portfolio-images/where-to-watch.jpg";
-
-let images = [
-    {
-        image: choreDoorImg,
-        name: "choredoor"
-    }, 
-    {
-        image: doneDailyImg,
-        name: "DoneDaily"
-    }, 
-    {
-        image: passwordGenImg,
-        name: "password-generator"
-    }, 
-    {
-        image: quizTimeoutImg,
-        name: "quiztimeout"
-    }, 
-    {
-        image: weatherHostImg,
-        name: "weather_host"
-    }, 
-    {
-        image: whereToWatchImg,
-        name: "where-to-watch"
-    }, 
-];
-
 // Project Info
-let projects = [
+let projects = [    
+    {
+        name: "Medic Manager",
+        id: "medicmanager",
+        githubUrl: "https://github.com/bernardjbs/Medic-Manager",
+        description: "Medic Manager is an interactive system for storage expiry tracking and replacement schedules featuring email reminders and a chatbot.",
+        releaseDate: "June 2022",
+        releaseYear: "2022",
+        technologies: ["HTML", "CSS", "Javascript", "Node.js", "Restful API", "Handlebars", "Express", "MySql", "Sequelize", "Emailer", "MVC", "Heroku", "Authentication"],
+        projectType: "Individual Project",
+        image: "./assets/images/portfolio-images/medic_manager.jpg",
+        longDescription: "This application provides a means for users of various age groups to keep track of medications and receive email reminders of expiry dates of that information.",
+        pointOne: "Add any medications with pre-defined and custom fields to display a graph of information for any user",
+        pointTwo: "Update and delete options available",
+        pointThree: "Polished user interface and user specific login options",
+        purpose: "Too many things to keep track of. Let this application do it for you."
+    },
+    {
+        name: "Awesome Tech Blog",
+        id: "techblog",
+        githubUrl: "https://github.com/origin-42/awesome-tech-blog",
+        description: "A simple tech blog to keep track of your thoughts and ideas.",
+        releaseDate: "May 2022",
+        releaseYear: "2022",
+        technologies: ["JavaScript", "Node.JS", "MySql", "Express", "Handlebars", "MVC"],
+        projectType: "Individual Project",
+        image: "./assets/images/portfolio-images/tech_blog.jpg",
+        longDescription: "I wanted a place for users to be able to store ideas about current and future ideas relative to web design and programming. This provides an easy-to-use place to log in, create, and share ideas with like-minded individuals.",
+        pointOne: "Add and edit informqation related to ideas in the tech industry",
+        pointTwo: "Share ideas with others",
+        pointThree: "Collaborate with others on posts and ideas",
+        purpose: "Mingle with other tech enthusiasts regarding ideas related to any particular industryz."
+    },
+    {
+        name: "E-Commerce Application",
+        id: "ecommerce",
+        githubUrl: "https://github.com/origin-42/e-commerce",
+        description: "A web application to store, view, add to, update, and remove product data from.",
+        releaseDate: "May 2022",
+        releaseYear: "2022",
+        technologies: ["JavaScript", "Node.JS", "MySql", "Express"],
+        projectType: "Individual Project",
+        image: "./assets/images/portfolio-images/ecommerce.jpg",
+        longDescription: "This application serves as a base for creating and populating an e-commerce backend with database information relative to your products and product categories.",
+        pointOne: "Easily add information into a products database",
+        pointTwo: "Reduce inconsistency with products through tags relating each category",
+        pointThree: "Update, delete, add, retrieve information",
+        purpose: "Keep track of products and category information."
+    },
+    {
+        name: "Employee Database",
+        id: "employee_database",
+        githubUrl: "https://github.com/origin-42/employee-database",
+        description: "An application to hold employee information.",
+        releaseDate: "May 2022",
+        releaseYear: "2022",
+        technologies: ["JavaScript", "Node.JS", "MySql", "Express"],
+        projectType: "Individual Project",
+        image: "./assets/images/portfolio-images/employee_database.jpg",
+        longDescription: "The idea was to further my knowledge with asyncronous code whilst also creating an intuitive employee registry that is updateable.",
+        pointOne: "Keep track of company information",
+        pointTwo: "Includes department, role, and employee information in one location",
+        pointThree: "Display information on the click of a button",
+        purpose: "Ensure consistency across departments and easy to obtain information for the company."
+    },
+    {
+        name: "Scribbles",
+        id: "scribbles",
+        githubUrl: "https://github.com/origin-42/scribbles",
+        description: "Take notes from the browser in an easily accessible location with a clean and polished interface.",
+        releaseDate: "May 2022",
+        releaseYear: "2022",
+        technologies: ["JavaScript", "Node.JS", "MySql", "HTML", "CSS", "Express"],
+        projectType: "Individual Project",
+        image: "./assets/images/portfolio-images/scribbles.jpg",
+        longDescription: "This application is intended to server as an update to note taker using mysql2 CLI, developing a databasing system for the application. Watch this space for further development.",
+        pointOne: "Add notes as they come to you.",
+        pointTwo: "Easily remove or update information",
+        pointThree: "Polished user interface and browser support",
+        purpose: "Notes accessible from any device in one location."
+    },
+    {
+        name: "Employee Registry",
+        id: "employeeRegistry",
+        githubUrl: "https://github.com/origin-42/employee-registry",
+        description: "A application designed to save employee data in an easily accesible location",
+        releaseDate: "April 2022",
+        releaseYear: "2022",
+        technologies: ["JavaScript", "Node.JS", "Inquirer", "Jest", "HTML", "CSS"],
+        projectType: "Individual Project",
+        image: "./assets/images/portfolio-images/employee_registry.jpg",
+        longDescription: "This was developed to keep track of emplyees in a business to improve communication across the company and consistency in the team..",
+        pointOne: "Start application and run through prompts to add information on employees",
+        pointTwo: "Easily adjust information by locating and altering said information",
+        pointThree: "Clean and polished output, viewable in the browser",
+        purpose: "Provision a means to keep track of employee information."
+    },
+    {
+        name: "Readme Generator",
+        id: "readmeGenerator",
+        githubUrl: "https://github.com/origin-42/readme-generator",
+        description: "A simple application that generates a quality readme file with Node.js & Inquirer",
+        releaseDate: "April 2022",
+        releaseYear: "2022",
+        technologies: ["JavaScript", "Node.JS", "Inquirer"],
+        projectType: "Individual Project",
+        image: "./assets/images/portfolio-images/readme_generator.jpg",
+        longDescription: "Creating multiple repositories can be time consuming with the number of repositories developed. Here we can simply type the desired information and the formatting will be completed automatically, whilst ensuring formatting is consistent. This will save time searching for information that will be the same everytime, ensuring consistency across all applications, creating a clean and presenteable README.md file.",
+        pointOne: "Develop an application and run program to develop an in depth readme file",
+        pointTwo: "Easily adjust output by directly altering text",
+        pointThree: "Easy to use prompt based application",
+        purpose: "Cut time developing a readme file and create more consistency."
+    },
     {
         name: "Where to Watch",
         id: "whereToWatch",
