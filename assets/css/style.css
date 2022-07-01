@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 :root {
 
     --darkGreen: rgb(37, 38, 23);
     --dark-ishGreen: rgb(52, 64, 26);
-    --treeGreen: rgb(100, 115, 47);
+    --treeGreen: rgb(38, 43, 20);
     --fleuroGreen: rgb(202, 217, 89);
     --grassGreen: rgb(180, 191, 94);
 
     /* Typography */
-    --merri: 'Indie Flower', cursive;
+    --merri: 'Russo One', sans-serif;
     --tili: 'Titillium Web', sans-serif;
     --yellowTail: 'Yellowtail', cursive;
 
@@ -53,19 +53,20 @@ main::before {
     font-size: 4rem;
 }
 .hero-container li a {
-    color: var(--darkGreen);
+    color: var(--grassGreen);
     font-size: 1.2rem;
     font-weight: bold;
-    text-shadow: 0 0 3px var(--fleuroGreen);
+    text-shadow: 0 0 12px var(--darkGreen);
 }
 .hero-container #socials {
     display: flex;
 }
 .hero-container #socials li a {
     margin-right: 5px;
+    font-size: 2rem;
 }
 .hero-container #socials li a i:hover {
-    text-shadow: 2px 2px 2px var(--fleuroGreen);
+    text-shadow: 2px 2px 2px var(--treeGreen);
 }
 .hero-container #socials li a i:active {
     text-shadow: none;
@@ -306,6 +307,10 @@ img.card-img-top {
     }
 }
 @media (max-width: 540px) {
+    .hero-container li a {
+        color: var(--dark-ishGreen);
+        text-shadow: 0 0 12px var(--fleuroGreen);
+    }
     #portfolio-selection .modal-header {
         flex-direction: column-reverse;
         align-items: center;
