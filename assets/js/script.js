@@ -72,7 +72,7 @@ let projects = [
         releaseDate: "June 2022",
         releaseYear: "2022",
         technologies: ["HTML", "CSS", "Javascript", "Node.js", "Restful API", "Handlebars", "Express", "MySql", "Sequelize", "Emailer", "MVC", "Heroku", "Authentication"],
-        projectType: "Individual Project",
+        projectType: "Group Project",
         image: "./assets/images/portfolio-images/medic_manager.jpg",
         longDescription: "This application provides a means for users of various age groups to keep track of medications and receive email reminders of expiry dates of that information.",
         pointOne: "Add any medications with pre-defined and custom fields to display a graph of information for any user",
