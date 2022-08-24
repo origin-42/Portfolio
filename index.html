@@ -33,7 +33,8 @@
                         <h1>DAVE PLUMMER</h1>
                         <nav>
                             <ul>
-                                <li><a href="#cvFormRequest" data-bs-toggle="modal">Request CV</a></li>
+                                <li><a href="./assets/images/Dave's Resume.pdf" target="_blank" rel="noreferrer">Request CV</a></li>
+                                <li><a href="#aboutMe" data-bs-toggle="modal">About Me</a></li>
                                 <li><a href="#contactForm" data-bs-toggle="modal">Contact Me</a></li>
                             </ul>
                             <ul id="socials">
@@ -41,6 +42,7 @@
                                 <li><a href="https://instagram.com/origin_42" target="_blank"><i class="fa-brands fa-instagram cont-fa"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/david-plummer-630a46a7/" target="_blank"><i class="fa-brands fa-linkedin cont-fa"></i></a></li>
                             </ul>
+
                         </nav>
                     </div>
                 </div>
@@ -64,7 +66,7 @@
             <p id="projectType"></p>
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-lg" id="portfolioSelectionTitle"><span id="pf-title">Chorebot</span><span> | Created: </span><span id="pf-dateReleased">April, 2022</span></h5>
+                    <h5 class="modal-title text-lg" id="portfolioSelectionTitle"><span id="pf-title">Chorebot</span><span> | Created: </span><span id="pf-dateReleased">April, 2022</span> | Website: <a href=""></a> <span id="pf-websiteLink"></span></h5>
                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -119,44 +121,37 @@
                         <label for="contactMessage"></label>
                         <textarea class="form-control" id="contactMessage" name="contactMessage" cols="20" placeholder="type your message.."></textarea>
                     </form>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Send Email</button>
+                    <div class="modal-footer modal-email-exit">
+                        <p>To: d.plummer89@hotmail.com</p>
+                        <div>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Send Email</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal for CV Request -->
-    <div class="modal fade" id="cvFormRequest" tabindex="-1" aria-labelledby="#cvFormTitle" aria-hidden="true">
+    <div class="modal fade" id="aboutMe" tabindex="-1" aria-labelledby="#contactFormTitle" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="contactFormTitle">Request CV</h5>
+                    <h5 class="modal-title" id="contactFormTitle">About Me</h5>
                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
 
-                    <form method="POST" action="mailto: daveplum1991@gmail.com"
-                    enctype="multipart/form-data">
-                        <label for="contactEmailName">Name:</label>
-                        <input type="text" class="form-control" name="contactEmailName" id="contactEmailName" placeholder="john.." />
-                        <label for="modal-email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="modal-email" name="modal-email" placeholder="e.g. mike@ozmail.com">
-                        <label for="contactMessage"></label>
-                        <textarea class="form-control" id="contactMessage" name="contactMessage" cols="20">Requesting CV</textarea>
-                    </form>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Send Email</button>
-                    </div>
+                    <p id="bioText">
+                        With a recently acquired certification in full stack web development, I'm looking to progress my studies by experience, both through my own endeavors and with other experienced and enthusiastic developers. My core experience developing applications has revolved around a React framework for building user interfaces and NoSQL for storage and retrieval of data. These are technologies I plan to leverage as I prefer the modularity of React and the scalability and flexibility of NoSQL. However, these ideals aren't cast in stone, I'm always interested to learn new concepts and explore new practices.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Main Content Section -->
     <main>

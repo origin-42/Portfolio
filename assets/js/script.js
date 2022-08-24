@@ -6,6 +6,7 @@ let projects = [
         githubUrl: "https://github.com/origin-42/Tag-It-WA",
         description: "Track local issues and contribute.",
         releaseDate: "August 2022",
+        websiteUsed: $("<a id='tagitwawebsite' target='_blank' rel='noreferrer' href='https://tagit-wa.herokuapp.com/'>Tag it, WA</a>"),
         releaseYear: "2022",
         technologies: ["Javascript", "MERN", "GraphQL", "Mongoose", "Google Maps API"],
         projectType: "Individual Project",
@@ -22,6 +23,7 @@ let projects = [
         githubUrl: "https://github.com/origin-42/book_search-n-save",
         description: "Use google books API to find information about a topic that interests you.",
         releaseDate: "July 2022",
+        websiteUsed: $("<a id='booksearchenginewebsite' target='_blank' rel='noreferrer' href='https://regular-book-store.herokuapp.com/'>Book Search Engine</a>"),
         releaseYear: "2022",
         technologies: ["Javascript", "React.js", "JSX", "Babel", "Express", "Apollo", "GraphQL NoSql", "MVC", "Google Books API", "Local Storage", "Auth with "],
         projectType: "Individual Project",
@@ -70,6 +72,7 @@ let projects = [
         githubUrl: "https://github.com/bernardjbs/Medic-Manager",
         description: "Medic Manager is an interactive system for storage expiry tracking and replacement schedules featuring email reminders and a chatbot.",
         releaseDate: "June 2022",
+        websiteUsed: $("<a id='medicmanagerwesbite' target='_blank' rel='noreferrer' href='https://desolate-brook-03478.herokuapp.com/'>Medic Manager</a>"),
         releaseYear: "2022",
         technologies: ["HTML", "CSS", "Javascript", "Node.js", "Restful API", "Handlebars", "Express", "MySql", "Sequelize", "Emailer", "MVC", "Heroku", "Authentication"],
         projectType: "Group Project",
@@ -183,6 +186,7 @@ let projects = [
         overlayUrl: "./assets/images/portfolio-images/overlay_images/movies.jpg",
         description: "Got a show you're interested in? Get all of its information here in one easy search",
         releaseDate: "March, 2022",
+        websiteUsed: $("<a id='whereToWatchWebsite' target='_blank' rel='noreferrer' href='https://origin-42.github.io/where-to-watch/'>Where to Watch</a>"),
         releaseYear: "2022",
         technologies: ["HTML", "CSS", "JavaScript", "APIs", "Boostrap", "JQuery", "JQueryUI", "Github"],
         projectType: "Group Project",
@@ -200,6 +204,7 @@ let projects = [
         overlayUrl: "./assets/images/portfolio-images/overlay_images/weather.jpg",
         description: "A dashboard using the 'openweathermap' api to displlay weather info.",
         releaseDate: "March, 2022",
+        websiteUsed: $("<a id='weatherHostWebsite' target='_blank' rel='noreferrer' href='https://origin-42.github.io/weather_host/'>Your Weather Host</a>"),
         releaseYear: "2022",
         technologies: ["HTML", "CSS", "JavaScript", "APIs", "Boostrap", "JQuery", "JQueryUI", "Github"],
         projectType: "Individual Project",
@@ -217,6 +222,7 @@ let projects = [
         overlayUrl: "./assets/images/portfolio-images/overlay_images/calendar.jpg",
         description: "Schedule events with this simple daily planner.",
         releaseDate: "March, 2022",
+        websiteUsed: $("<a id='doneDailyWebsite' target='_blank' rel='noreferrer' href='https://origin-42.github.io/DoneDaily/'>Done Daily</a>"),
         releaseYear: "2022",
         technologies: ["HTML", "CSS", "JavaScript", "Web APIs", "Boostrap", "JQuery", "Github", "Moment.js"],
         projectType: "Individual Project",
@@ -234,6 +240,7 @@ let projects = [
         overlayUrl: "./assets/images/portfolio-images/overlay_images/multichoice.jpg",
         description: "A timed coding quiz where to test your knowledge of javascript and web API's, CSS, and HTML.",
         releaseDate: "March, 2022",
+        websiteUsed: $("<a id='quizTimeoutWebsite' target='_blank' rel='noreferrer' href='https://origin-42.github.io/quiztimeout/'>Quiz Timeout</a>"),
         releaseYear: "2022",
         technologies: ["HTML", "CSS", "JavaScript"],
         projectType: "Individual Project",
@@ -251,6 +258,7 @@ let projects = [
         overlayUrl: "./assets/images/portfolio-images/overlay_images/password.jpg",
         description: "Randomly generate a password for use with online applications.",
         releaseDate: "February, 2022",
+        websiteUsed: $("<a id='passwordGenWebsite' target='_blank' rel='noreferrer' href='https://origin-42.github.io/password-generator/'>Password Generator</a>"),
         releaseYear: "2022",
         technologies: ["HTML", "CSS", "JavaScript"],
         projectType: "Individual Project",
@@ -315,10 +323,12 @@ projects.forEach(project => {
     $(`#${project.id}`).on("click", function () {
 
         $("#pf-techUsed").empty();
+        $("#pf-websiteLink").empty();
         
         $("#projectType").text(project.projectType);
         $("#pf-title").text(project.name);
         $("#pf-dateReleased").text(project.releaseDate);
+        $("#pf-websiteLink").append(project.websiteUsed);
         $("#pf-description").text(project.longDescription);
         $("#pf-tagOne").text(project.pointOne);
         $("#pf-tagTwo").text(project.pointTwo);
@@ -329,6 +339,7 @@ projects.forEach(project => {
         $("#pf-image").attr("alt", `${project.name} Website`)
         
         let arr = [];
+   
         project.technologies.forEach(tech => {
 
             let li = $("<li>");

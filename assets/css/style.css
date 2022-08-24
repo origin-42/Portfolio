@@ -240,6 +240,12 @@ img.card-img-top {
     justify-content: center;
 }
 
+#bioText {
+    display: flex;
+    max-width: fit-content;
+    max-height: fit-content;
+    color: #e2ff02;
+}
 
 /* Modals */
 .modal {
@@ -269,6 +275,11 @@ img.card-img-top {
     background-color: var(--fleuroGreen);
     box-shadow: 0 0 2px 2px var(--darkGreen);
     color: var(--darkGreen);
+}
+.modal-email-exit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
